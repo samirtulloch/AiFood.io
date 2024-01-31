@@ -1,0 +1,630 @@
+/*-----------------*/
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcedda;
+
+  /* sticky navi header */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.logo-name {
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #333;
+}
+
+/*-----------------*/
+/* NAVIGATION */
+.main-navi-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 4.8rem;
+}
+
+.main-navi-link:link,
+.main-navi-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-navi-link:hover,
+.main-navi-link:active {
+  color: #ee4e34;
+}
+
+.main-navi-link.navi-cta:link,
+.main-navi-link.navi-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #ee4e34;
+}
+
+.main-navi-link.navi-cta:hover,
+.main-navi-link.navi-cta:active {
+  background-color: #d7452f;
+}
+
+/* MOBILE */
+.navi-mobile-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.navi-mobile-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.navi-mobile-icon[name="close-outline"] {
+  display: none;
+}
+
+/* .main-nav-list NAVIGATION */
+.sticky-navi .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  border-bottom: 1px solid #eee;
+}
+
+.sticky-navi .hero-section {
+  margin-top: 9.6rem;
+}
+
+/*-----------------*/
+/* HERO SECTION */
+
+.hero-section {
+  background-color: #fcedda;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fcedda;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #ee4e34;
+  font-weight: 700;
+}
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.how-section {
+  padding: 9.6rem 0;
+}
+
+.steps-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.steps-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.steps-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-img-box::before,
+.steps-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.steps-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: rgba(252, 237, 218, 0.3);
+  z-index: -2;
+}
+
+.steps-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: rgba(252, 237, 218, 0.5);
+  z-index: -1;
+}
+
+.steps-img {
+  width: 40%;
+}
+
+/*-----------------*/
+/* MEALS SECTION */
+
+.meals-section {
+  padding: 9.6rem 0;
+}
+
+.meals {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.meals:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.meals-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meals-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tags {
+  display: inline-block;
+  padding: 0.7rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #333;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.tags-meat {
+  background-color: #ee4e34;
+}
+.tags-vegetarian {
+  background-color: #32b548;
+}
+.tags-vegan {
+  background-color: #94d82d;
+}
+.tags-paleo {
+  background-color: #ffd43b;
+}
+
+.meals-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meals-nutritions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meals-nutrition {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meals-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #ee4e34;
+}
+
+.meals-img {
+  width: 100%;
+}
+
+.recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/*-----------------*/
+/* TESTIMONIALS SECTION */
+
+.testimonials-section {
+  background-color: #fcedda;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  align-items: start;
+}
+
+.testimonials-container {
+  padding: 6rem;
+  /* padding: 9.6rem; */
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonials-img {
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  border: 0.3rem solid #fff;
+}
+
+.testimonials-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonials-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery-food {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+
+.gallery-food-items {
+  overflow: hidden;
+}
+
+.gallery-food-items img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-food-items img:hover {
+  transform: scale(1.2);
+}
+
+/*-----------------*/
+/* MEALS SECTION */
+
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+
+.pricing-plan-starter {
+  justify-self: end;
+  border: 2px solid #fcedda;
+  padding: 4.6rem;
+}
+
+.pricing-plan-complete {
+  background-color: #fcedda;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan-complete::after {
+  content: "Best value";
+  position: absolute;
+  letter-spacing: 3px;
+  top: 8%;
+  right: -20%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.pricing-plan-name {
+  color: #ee4e34;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.pricing-plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.pricing-plan-singup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing-plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #ee4e34;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fcedda;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.price-plan-excluded {
+  text-decoration: line-through;
+}
+
+/*-----------------*/
+/* CTA SECTION */
+
+.cta-section {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #fd6149, #ee4e34);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: url("../img/eating_form_03.jpg");
+  background-size: cover;
+  background-position: cover;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(253, 242, 233, 0.3);
+}
+
+/*-----------------*/
+/* FOOTER */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-grid {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.footer-social-icons {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-navi {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-links:link,
+.footer-links:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-links:hover,
+.footer-links:active {
+  color: #555;
+}
