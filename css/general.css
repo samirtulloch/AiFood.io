@@ -128,14 +128,14 @@ body {
 }
 
 .btn-form {
-  background-color: #783937;
+  background-color: #ee4e34;
   color: #fff;
   align-self: end;
   padding: 1.2rem;
 }
 
 .btn-form:hover {
-  background-color: #622f2d;
+  background-color: #d7452f;
   color: #fff;
 }
 
