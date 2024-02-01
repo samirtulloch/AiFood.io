@@ -92,7 +92,7 @@
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
   z-index: 999;
-  border-bottom: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 .sticky-navi .hero-section {
@@ -491,13 +491,14 @@
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 2.4rem 2.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  background-image: linear-gradient(to right bottom, #fd6149, #ee4e34);
+  background-color: #fcedda;
+  /* background-image: linear-gradient(to right bottom, #fd6149, #ee4e34); */
   overflow: hidden;
 }
 
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  /* color: #45260a; */
 }
 
 .cta .heading-secondary {
