@@ -176,12 +176,6 @@ body {
   color: #ee4e34;
 }
 
-*:focus {
-  outline: none;
-  border-radius: 0.2rem;
-  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.3);
-}
-
 .no-focus:focus {
   box-shadow: none;
 }
