@@ -74,7 +74,7 @@
   }
 
   .hero-img {
-    width: 60%;
+    width: 40%;
   }
 
   .delivered-meals {
@@ -304,6 +304,10 @@
   .btn:link,
   .btn:visited {
     padding: 2rem 1rem;
+  }
+
+  .hero-img-box picture {
+    display: none;
   }
 }
 
